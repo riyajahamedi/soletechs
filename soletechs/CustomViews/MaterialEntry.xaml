@@ -1,15 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<ContentView xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="soletechs.CustomViews.MaterialEntry" xmlns:local="clr-namespace:soletechs.CustomViews">
-	<ContentView.Content>
-        <Grid ColumnSpacing="16" Margin="0,8">
+<?xml version="1.0" encoding="UTF-8" ?>
+<ContentView
+    x:Class="soletechs.CustomViews.MaterialEntry"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:soletechs.CustomViews">
+    <ContentView.Content>
+        <Grid Margin="0,8" ColumnSpacing="16">
             <Grid.RowDefinitions>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="1"/>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="1" />
             </Grid.RowDefinitions>
-            <Label x:Name="HiddenLabel" FontSize="10" IsVisible="False" Margin="0"/>
-            <local:BorderlessEntry x:Name="EntryField" Text="{Binding Text, Mode=TwoWay}" Margin="0,12,0,0"/>
-            <BoxView x:Name="BottomBorder" BackgroundColor="Gray"  Grid.Row="1" HeightRequest="1" Margin="0" HorizontalOptions="FillAndExpand"/>
-            <BoxView x:Name="HiddenBottomBorder" BackgroundColor="Gray" Grid.Row="1" HeightRequest="1" Margin="0" WidthRequest="0" HorizontalOptions="Center"/>
+            <Label
+                x:Name="HiddenLabel"
+                Margin="0"
+                FontSize="10"
+                IsVisible="False" />
+            <local:BorderlessEntry
+                x:Name="EntryField"
+                Margin="0,12,0,0"
+                Text="{Binding Text, Mode=TwoWay}" />
+            <BoxView
+                x:Name="BottomBorder"
+                Grid.Row="1"
+                Margin="0"
+                BackgroundColor="Gray"
+                HeightRequest="1"
+                HorizontalOptions="FillAndExpand" />
+            <BoxView
+                x:Name="HiddenBottomBorder"
+                Grid.Row="1"
+                Margin="0"
+                BackgroundColor="Gray"
+                HeightRequest="1"
+                HorizontalOptions="Center"
+                WidthRequest="0" />
         </Grid>
-	</ContentView.Content>
+    </ContentView.Content>
 </ContentView>
