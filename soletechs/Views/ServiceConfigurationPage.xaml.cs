@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-
+using soletechs.ViewModels;
 using Xamarin.Forms;
 
 namespace soletechs.Views
@@ -10,6 +10,8 @@ namespace soletechs.Views
         public ServiceConfigurationPage()
         {
             InitializeComponent();
+
+            BindingContext = new ServiceConfigViewModel();
         }
     }
 }

@@ -1,6 +1,7 @@
 ﻿using System;
 
 using Xamarin.Forms;
+using soletechs.Views;
 
 namespace soletechs
 {
@@ -19,7 +20,7 @@ namespace soletechs
                 DependencyService.Register<CloudDataStore>();
 
             if (Device.RuntimePlatform == Device.iOS)
-                MainPage = new MainPage();
+                MainPage = new ServiceConfigurationPage();
             else
                 MainPage = new NavigationPage(new MainPage());
         }

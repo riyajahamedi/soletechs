@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="soletechs.Views.ServiceConfigurationPage" Title="{Binding Title}">
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="soletechs.Views.ServiceConfigurationPage" xmlns:custom="clr-namespace:soletechs.CustomViews" Title="{Binding Title}">
 	<ContentPage.Content>
-        <StackLayout Spacing="20" Padding="15">
-            <Label Text="Company Name" />
-            <Entry Text="{Binding CompanyName}"/>
-        </StackLayout>
+        <StackLayout Orientation="Vertical" Spacing="16" Margin="16">
+        <custom:MaterialEntry Placeholder="First Name" AccentColor="Green" Text="{Binding FirstName}"/>
+        <custom:MaterialEntry Placeholder="Last Name" AccentColor="Orange" Text="{Binding LastName}"/>
+        <custom:MaterialEntry Placeholder="Email" Keyboard="Email" AccentColor="Red" Text="{Binding Email}"/>
+    </StackLayout>
 	</ContentPage.Content>
 </ContentPage>

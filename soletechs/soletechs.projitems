@@ -37,6 +37,12 @@
       <DependentUpon>ServiceConfigurationPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\ServiceConfigViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CustomViews\BorderlessEntry.xaml.cs">
+      <DependentUpon>BorderlessEntry.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)CustomViews\MaterialEntry.xaml.cs">
+      <DependentUpon>MaterialEntry.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\AboutPage.xaml" />
@@ -47,5 +53,14 @@
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\ServiceConfigurationPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)CustomViews\BorderlessEntry.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)CustomViews\MaterialEntry.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)CustomViews\" />
   </ItemGroup>
 </Project>

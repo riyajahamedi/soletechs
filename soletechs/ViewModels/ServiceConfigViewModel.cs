@@ -5,6 +5,7 @@ namespace soletechs.ViewModels
     {
         public ServiceConfigViewModel()
         {
+            Title= "Service Configuration";
         }
 
         string companyName = string.Empty;
