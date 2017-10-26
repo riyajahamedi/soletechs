@@ -24,15 +24,15 @@
                 Keyboard="Email"
                 Placeholder="Email"
                 Text="{Binding Email}" />
-            <controls:CircleImage Aspect="AspectFill" Source="{Binding Image}">
+            <controls:CircleImage Aspect="AspectFill" HorizontalOptions="Center" Source="{Binding Image}">
                 <controls:CircleImage.WidthRequest>
                     <OnPlatform x:TypeArguments="x:Double">
-                        <On Platform="Android, iOS">55</On>
+                        <On Platform="Android, iOS">100</On>
                     </OnPlatform>
                 </controls:CircleImage.WidthRequest>
                 <controls:CircleImage.HeightRequest>
                     <OnPlatform x:TypeArguments="x:Double">
-                        <On Platform="Android, iOS">55</On>
+                        <On Platform="Android, iOS">100</On>
                     </OnPlatform>
                 </controls:CircleImage.HeightRequest>
             </controls:CircleImage>
