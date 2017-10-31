@@ -6,13 +6,15 @@
     <ContentView.Content>
         <StackLayout Margin="5" Orientation="Vertical">
             <Label
-                Margin="2"
+                Margin="1"
                 FontSize="Small"
-                Text="Title" />
+                Text="Title"
+                TextColor="Gray" />
             <Label
                 Margin="2"
                 FontSize="Medium"
-                Text="Title" />
+                LineBreakMode="WordWrap"
+                Text="Text sdfdsfdf dsfdf dfds f dsf ds fd sf dsf ds f dsf d fd sfdsfdsfdsf  dsf dsf ds fds f" />
         </StackLayout>
     </ContentView.Content>
 </ContentView>
