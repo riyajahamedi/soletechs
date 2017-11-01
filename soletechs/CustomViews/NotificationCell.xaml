@@ -34,7 +34,8 @@
                     <local:FieldItemView
                         Title="Type"
                         Grid.Column="1"
-                        HorizontalOptions="End"
+                        Margin="30,0,0,0"
+                        HorizontalOptions="Start"
                         Text="Information" />
                     <local:FieldItemView
                         Title="Company"
