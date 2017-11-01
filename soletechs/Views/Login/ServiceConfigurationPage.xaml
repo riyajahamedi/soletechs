@@ -21,7 +21,7 @@
                 Text="{Binding CompanyPassword, Mode=TwoWay}" />
             <custom:MaterialButton
                 x:Name="SaveButton"
-                Margin="0,20,0,0"
+                Margin="0,30,0,0"
                 BackgroundColor="#03A9F4"
                 Clicked="OnSaveButtonClick"
                 Elevation="1"
