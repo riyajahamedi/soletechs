@@ -4,9 +4,9 @@ using System.Text;
 
 namespace soletechs.ViewModels
 {
-    public class Approvals:BaseViewModel
+    public class ApprovalViewModel : BaseViewModel
     {
-        public Approvals():base()
+        public ApprovalViewModel():base()
         {
             this.Title = "Approvals";
         }

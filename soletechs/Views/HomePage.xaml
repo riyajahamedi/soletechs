@@ -4,25 +4,9 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:pages="clr-namespace:soletechs.Views">
-    <NavigationPage Title="Notifications">
-        <x:Arguments>
-            <pages:NotificationPage />
-        </x:Arguments>
-    </NavigationPage>
+    <pages:NotificationPage />
     <pages:ProfilePage />
-    <NavigationPage Title="Services">
-        <x:Arguments>
-            <pages:SelfService />
-        </x:Arguments>
-    </NavigationPage>
-    <NavigationPage Title="Inquiries">
-        <x:Arguments>
-            <pages:Inquiries />
-        </x:Arguments>
-    </NavigationPage>
-    <NavigationPage Title="Approvals">
-        <x:Arguments>
-            <pages:Approvals />
-        </x:Arguments>
-    </NavigationPage>
+    <pages:SelfService />
+    <pages:Inquiries />
+    <pages:Approvals />
 </TabbedPage>
