@@ -6,7 +6,7 @@
     xmlns:local="clr-namespace:soletechs.CustomViews">
     <ViewCell.View>
         <local:BoxFrame Margin="4" CornerRadius="3">
-            <Grid Padding="-5" BackgroundColor="Yellow">
+            <Grid Padding="-5">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="25" />
                     <RowDefinition Height="*" />
@@ -17,7 +17,7 @@
                 </StackLayout>
                 <Grid
                     Grid.Row="1"
-                    Padding="-2,0,0,0"
+                    Padding="-1,0,0,0"
                     HorizontalOptions="Start">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="*" />
@@ -34,7 +34,7 @@
                     <local:FieldItemView
                         Title="Type"
                         Grid.Column="1"
-                        HorizontalOptions="Start"
+                        HorizontalOptions="End"
                         Text="Information" />
                     <local:FieldItemView
                         Title="Company"
