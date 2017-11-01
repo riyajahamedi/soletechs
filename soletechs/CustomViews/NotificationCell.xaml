@@ -37,25 +37,24 @@
                         Title="Created Date"
                         HorizontalOptions="Start"
                         Text="02.1.1"
-                        TextColor="DarkGray"
-                        TitleColor="LightGray" />
+                        TextColor="#FF333333"
+                        TitleColor="DarkGray" />
                     <local:FieldItemView
                         Title="Type"
                         Grid.Column="1"
-                        Margin="30,0,0,0"
+                        Margin="15,0,0,0"
                         HorizontalOptions="Start"
                         Text="Information"
-                        TextColor="DarkGray"
-                        TitleColor="LightGray" />
+                        TextColor="#FF333333"
+                        TitleColor="DarkGray" />
                     <local:FieldItemView
                         Title="Company"
-                        Grid.Row="1"
-                        Grid.ColumnSpan="2"
-                        Margin="0,5,0,0"
+                        Grid.Column="2"
+                        Margin="15,0,0,0"
                         HorizontalOptions="Start"
                         Text="Soletechs"
                         TextColor="#FF333333"
-                        TitleColor="LightGray" />
+                        TitleColor="DarkGray" />
                 </Grid>
             </Grid>
         </local:BoxFrame>
