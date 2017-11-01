@@ -23,7 +23,7 @@
                 </StackLayout>
                 <Grid
                     Grid.Row="1"
-                    Padding="-1,8,0,0"
+                    Padding="-1,5,0,0"
                     HorizontalOptions="Start">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="*" />

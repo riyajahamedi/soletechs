@@ -14,7 +14,7 @@
             <custom:BaseListView
                 x:Name="notification_list"
                 ItemsSource="{Binding Notifications, Mode=TwoWay}"
-                RowHeight="180">
+                RowHeight="150">
                 <custom:BaseListView.ItemTemplate>
                     <DataTemplate>
                         <custom:NotificationCell />
