@@ -45,5 +45,33 @@ namespace soletechs.CustomViews
                 SetValue(TextProperty, value);
             }
         }
+
+        public static BindableProperty TitleColorProperty = BindableProperty.Create(nameof(TitleColor), typeof(Color), typeof(FieldItemView), Color.Accent);
+
+        public Color TitleColor
+        {
+            get
+            {
+                return (Color)GetValue(TitleColorProperty);
+            }
+            set
+            {
+                SetValue(TitleColorProperty, value);
+            }
+        }
+
+        public static BindableProperty TextColorProperty = BindableProperty.Create(nameof(TextColor), typeof(Color), typeof(FieldItemView), Color.Accent);
+
+        public Color TextColor
+        {
+            get
+            {
+                return (Color)GetValue(TextColorProperty);
+            }
+            set
+            {
+                SetValue(TextColorProperty, value);
+            }
+        }
     }
 }
