@@ -163,6 +163,9 @@
   <ItemGroup>
     <BundleResource Include="Resources\signout.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\launcher.png" />
+  </ItemGroup>
   <Import Project="..\soletechs\soletechs.projitems" Label="Shared" Condition="Exists('..\soletechs\soletechs.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
