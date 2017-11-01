@@ -24,7 +24,7 @@
                 </StackLayout>
                 <Grid
                     Grid.Row="1"
-                    Padding="-1,0,0,0"
+                    Padding="-1,8,0,0"
                     HorizontalOptions="Start">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="*" />
@@ -38,16 +38,16 @@
                         Title="Created Date"
                         HorizontalOptions="Start"
                         Text="02.1.1"
-                        TextColor="#FF0271BC"
-                        TitleColor="#FF05CAE5" />
+                        TextColor="DeepSkyBlue"
+                        TitleColor="LightSkyBlue" />
                     <local:FieldItemView
                         Title="Type"
                         Grid.Column="1"
                         Margin="30,0,0,0"
                         HorizontalOptions="Start"
                         Text="Information"
-                        TextColor="#FF0271BC"
-                        TitleColor="#FF05CAE5" />
+                        TextColor="DeepSkyBlue"
+                        TitleColor="LightSkyBlue" />
                     <local:FieldItemView
                         Title="Company"
                         Grid.Row="1"
@@ -55,8 +55,8 @@
                         Margin="0,5,0,0"
                         HorizontalOptions="Start"
                         Text="Soletechs"
-                        TextColor="#FF0271BC"
-                        TitleColor="#FF05CAE5" />
+                        TextColor="DeepSkyBlue"
+                        TitleColor="LightSkyBlue" />
                 </Grid>
             </Grid>
         </local:BoxFrame>
