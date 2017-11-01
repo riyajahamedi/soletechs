@@ -19,10 +19,7 @@ namespace soletechs
             else
                 DependencyService.Register<CloudDataStore>();
 
-            if (Device.RuntimePlatform == Device.iOS)
-                MainPage = new ServiceConfigurationPage();
-            else
-                MainPage = new NavigationPage(new MainPage());
+            MainPage = new NavigationPage(new ServiceConfigurationPage());
         }
     }
 }
