@@ -15,7 +15,13 @@ namespace soletechs.iOS
 
             if (this.Control == null) return;
 
-            this.Control.TableFooterView = new UIView();
+            var tableView = Control as UITableView;
+            if (tableView != null)
+            {
+                tableView.SeparatorStyle = UITableViewCellSeparatorStyle.None;
+                tableView.SeparatorColor = UIColor.Clear;
+                tableView.TableFooterView = new UIView();
+            }
         }
     }
 }

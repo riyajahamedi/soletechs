@@ -8,13 +8,13 @@
     Icon="{Binding CurrentIcon}">
     <ContentPage.Content>
         <StackLayout
-            Margin="16"
+            Margin="0,16,0,16"
             Orientation="Vertical"
             Spacing="16">
             <custom:BaseListView
                 x:Name="notification_list"
                 ItemsSource="{Binding Notifications, Mode=TwoWay}"
-                RowHeight="150">
+                RowHeight="160">
                 <custom:BaseListView.ItemTemplate>
                     <DataTemplate>
                         <custom:NotificationCell />

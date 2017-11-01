@@ -5,22 +5,16 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:soletechs.CustomViews">
     <ViewCell.View>
-        <local:BoxFrame Margin="5" CornerRadius="2">
+        <local:BoxFrame Margin="0,5,0,5" CornerRadius="3">
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="30" />
-                    <RowDefinition Height="1" />
                     <RowDefinition Height="*" />
                 </Grid.RowDefinitions>
                 <StackLayout Orientation="Horizontal">
                     <Label HorizontalOptions="StartAndExpand" Text="Title" />
                     <Button HorizontalOptions="EndAndExpand" Image="delete.png" />
                 </StackLayout>
-                <Frame
-                    Grid.Row="1"
-                    HeightRequest="1"
-                    HorizontalOptions="FillAndExpand"
-                    OutlineColor="Gray" />
                 <Grid Grid.Row="2">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="*" />
