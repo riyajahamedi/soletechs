@@ -15,7 +15,10 @@
                     <Label HorizontalOptions="StartAndExpand" Text="Title" />
                     <Button HorizontalOptions="EndAndExpand" Image="delete.png" />
                 </StackLayout>
-                <Grid Grid.Row="1" HorizontalOptions="Start">
+                <Grid
+                    Grid.Row="1"
+                    Padding="-2,0,0,0"
+                    HorizontalOptions="Start">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="*" />
                         <RowDefinition Height="*" />
