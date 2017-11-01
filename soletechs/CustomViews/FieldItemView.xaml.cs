@@ -15,6 +15,7 @@ namespace soletechs.CustomViews
 		public FieldItemView ()
 		{
 			InitializeComponent ();
+            BindingContext = this;
 		}
 
         public static BindableProperty TitleProperty = BindableProperty.Create(nameof(Title), typeof(string), typeof(FieldItemView), string.Empty);
