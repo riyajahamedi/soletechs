@@ -20,7 +20,9 @@ namespace soletechs.Views
 
         private void OnLoginButtonClicked(object sender, EventArgs e)
         {
-
+            var homePage = new HomePage();
+            Navigation.InsertPageBefore(homePage, this);
+            Navigation.PopAsync();
         }
 
         private void OnCompanyNameClick(object sender, EventArgs e)

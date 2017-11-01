@@ -18,6 +18,7 @@
                 Text="{Binding UserID, Mode=TwoWay}" />
             <custom:MaterialEntry
                 AccentColor="{StaticResource Accent}"
+                IsPassword="True"
                 Placeholder="Password"
                 Text="{Binding PassWord, Mode=TwoWay}" />
             <custom:MaterialButton

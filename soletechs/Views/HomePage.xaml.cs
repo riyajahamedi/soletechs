@@ -12,9 +12,16 @@ namespace soletechs.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class HomePage : TabbedPage
     {
-        public HomePage ()
+        public HomePage()
         {
             InitializeComponent();
+        }
+
+        protected override void OnCurrentPageChanged()
+        {
+            base.OnCurrentPageChanged();
+            if (this.CurrentPage != null)
+                this.Title = CurrentPage.Title;
         }
     }
 }

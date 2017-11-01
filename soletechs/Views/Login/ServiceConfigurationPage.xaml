@@ -17,6 +17,7 @@
                 Text="{Binding CompanyName, Mode=TwoWay}" />
             <custom:MaterialEntry
                 AccentColor="{StaticResource Accent}"
+                IsPassword="True"
                 Placeholder="Company Password"
                 Text="{Binding CompanyPassword, Mode=TwoWay}" />
             <custom:MaterialButton
