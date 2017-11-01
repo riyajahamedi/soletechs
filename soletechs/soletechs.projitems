@@ -9,7 +9,12 @@
     <Import_RootNamespace>soletechs</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)CustomViews\BaseListView.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CustomViews\BoxFrame.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)CustomViews\MaterialButton.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CustomViews\NotificationCell.xaml.cs">
+      <DependentUpon>NotificationCell.xaml</DependentUpon>
+    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Models\ITabIcon.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\Item.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Services\CloudDataStore.cs" />
@@ -136,5 +141,10 @@
     <Folder Include="$(MSBuildThisFileDirectory)Views\Notification\" />
     <Folder Include="$(MSBuildThisFileDirectory)Views\SelfService\" />
     <Folder Include="$(MSBuildThisFileDirectory)Views\Profile\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)CustomViews\NotificationCell.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
 </Project>

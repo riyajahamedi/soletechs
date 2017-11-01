@@ -136,6 +136,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AppDelegate.cs" />
+    <Compile Include="BaseListViewRenderer.cs" />
+    <Compile Include="BoxFrameRenderer.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="BorderlessEntryRenderer.cs" />
     <Compile Include="MaterialButtonRenderer.cs" />

@@ -8,13 +8,13 @@
             <Label
                 Margin="1"
                 FontSize="Small"
-                Text="Title"
+                Text="{Binding Title}"
                 TextColor="Gray" />
             <Label
                 Margin="2"
                 FontSize="Medium"
                 LineBreakMode="WordWrap"
-                Text="Text sdfdsfdf dsfdf dfds f dsf ds fd sf dsf ds f dsf d fd sfdsfdsfdsf  dsf dsf ds fds f" />
+                Text="{Binding Text}" />
         </StackLayout>
     </ContentView.Content>
 </ContentView>

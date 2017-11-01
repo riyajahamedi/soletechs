@@ -3,6 +3,7 @@
     x:Class="soletechs.Views.NotificationPage"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:custom="clr-namespace:soletechs.CustomViews"
     Title="{Binding Title}"
     Icon="{Binding CurrentIcon}">
     <ContentPage.Content>
@@ -10,22 +11,16 @@
             Margin="16"
             Orientation="Vertical"
             Spacing="16">
-            <ListView x:Name="notification_list" ItemsSource="{Binding Notifications, Mode=TwoWay}">
-                <ListView.ItemTemplate>
+            <custom:BaseListView
+                x:Name="notification_list"
+                ItemsSource="{Binding Notifications, Mode=TwoWay}"
+                RowHeight="80">
+                <custom:BaseListView.ItemTemplate>
                     <DataTemplate>
-                        <ViewCell>
-                            <Grid>
-                                <Grid.RowDefinitions>
-                                    <RowDefinition Height="*" />
-                                    <RowDefinition Height="*" />
-                                </Grid.RowDefinitions>
-                                <Label Grid.Row="0" Text="Title" />
-                                <Label Grid.Row="1" Text="Text" />
-                            </Grid>
-                        </ViewCell>
+                        <custom:NotificationCell />
                     </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
+                </custom:BaseListView.ItemTemplate>
+            </custom:BaseListView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

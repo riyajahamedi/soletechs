@@ -9,7 +9,7 @@ namespace soletechs.ViewModels
         public NotificationViewModel() : base()
         {
             this.Title = "Notifications";
-            this.Notifications = ["Test", "Test"];
+            this.Notifications = new string[] { "Test", "Test" };
         }
 
         protected override string GetCurrentIcon()

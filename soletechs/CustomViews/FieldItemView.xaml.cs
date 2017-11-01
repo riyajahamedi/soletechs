@@ -16,5 +16,33 @@ namespace soletechs.CustomViews
 		{
 			InitializeComponent ();
 		}
-	}
+
+        public static BindableProperty TitleProperty = BindableProperty.Create(nameof(Title), typeof(float), typeof(FieldItemView), string.Empty);
+
+        public string Title
+        {
+            get
+            {
+                return (string)GetValue(TitleProperty);
+            }
+            set
+            {
+                SetValue(TitleProperty, value);
+            }
+        }
+
+        public static BindableProperty TextProperty = BindableProperty.Create(nameof(Text), typeof(float), typeof(FieldItemView), string.Empty);
+
+        public string Text
+        {
+            get
+            {
+                return (string)GetValue(TextProperty);
+            }
+            set
+            {
+                SetValue(TextProperty, value);
+            }
+        }
+    }
 }

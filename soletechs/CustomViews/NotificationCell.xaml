@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ViewCell
+    x:Class="soletechs.CustomViews.NotificationCell"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:soletechs.CustomViews">
+    <ViewCell.View>
+        <local:BoxFrame CornerRadius="2">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30" />
+                    <RowDefinition Height="1" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <StackLayout Orientation="Horizontal">
+                    <Label
+                        Margin="3"
+                        HorizontalOptions="StartAndExpand"
+                        Text="Title" />
+                    <Button
+                        Margin="3"
+                        HorizontalOptions="EndAndExpand"
+                        Image="delete.png" />
+                </StackLayout>
+                <BoxView
+                    Grid.Row="1"
+                    HeightRequest="1"
+                    HorizontalOptions="FillAndExpand" />
+                <Grid Grid.Row="2">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <local:FieldItemView
+                        Title="Created Date"
+                        HorizontalOptions="Start"
+                        Text="02.1.1" />
+                    <local:FieldItemView
+                        Title="Type"
+                        Grid.Column="1"
+                        HorizontalOptions="Start"
+                        Text="Information" />
+                    <local:FieldItemView
+                        Title="Company"
+                        Grid.Row="1"
+                        Grid.ColumnSpan="2"
+                        HorizontalOptions="Start"
+                        Text="Soletechs" />
+                </Grid>
+            </Grid>
+        </local:BoxFrame>
+    </ViewCell.View>
+</ViewCell>
