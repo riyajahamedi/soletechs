@@ -21,14 +21,14 @@
                 Text="{Binding CompanyPassword, Mode=TwoWay}" />
             <custom:MaterialButton
                 x:Name="SaveButton"
+                Margin="0,0,10,0"
                 BackgroundColor="#03A9F4"
                 Clicked="OnSaveButtonClick"
                 Elevation="1"
-                HorizontalOptions="Center"
+                HorizontalOptions="FillAndExpand"
                 Text="Save"
                 TextColor="White"
-                VerticalOptions="Center"
-                WidthRequest="300" />
+                VerticalOptions="Center" />
             <Button Clicked="OnGuestLoginClick" Text="Guest Login" />
         </StackLayout>
     </ContentPage.Content>
