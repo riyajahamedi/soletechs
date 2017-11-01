@@ -12,7 +12,7 @@ namespace soletechs
         public ItemDetailPage()
         {
             InitializeComponent();
-
+          
             var item = new Item
             {
                 Text = "Item 1",

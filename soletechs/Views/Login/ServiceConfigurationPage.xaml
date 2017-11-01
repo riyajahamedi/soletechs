@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    x:Class="soletechs.Views.ServiceConfigurationPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
+    xmlns:custom="clr-namespace:soletechs.CustomViews"
+    Title="{Binding Title}">
+    <ContentPage.Content>
+        <StackLayout
+            Margin="16"
+            Orientation="Vertical"
+            Spacing="16">
+            <custom:MaterialEntry
+                AccentColor="{StaticResource Accent}"
+                Placeholder="Company Name"
+                Text="{Binding CompanyName, Mode=TwoWay}" />
+            <custom:MaterialEntry
+                AccentColor="{StaticResource Accent}"
+                Placeholder="Company Password"
+                Text="{Binding CompanyPassword, Mode=TwoWay}" />
+            <Button Clicked="OnSaveButtonClick" Text="Save" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -13,5 +13,10 @@ namespace soletechs.Views
 
             BindingContext = new ServiceConfigViewModel();
         }
+
+        private void OnSaveButtonClick(object sender, EventArgs e)
+        {
+
+        }
     }
 }
