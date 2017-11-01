@@ -9,11 +9,20 @@ namespace soletechs.ViewModels
         public NotificationViewModel() : base()
         {
             this.Title = "Notifications";
+            this.Notifications = ["Test", "Test"];
         }
 
         protected override string GetCurrentIcon()
         {
             return IsSelected? "notification.png": "notification_inactive.png";
+        }
+
+        private string[] notification;
+
+        public string[] Notifications
+        {
+            get { return notification; }
+            set { SetProperty(ref notification, value); }
         }
     }
 }

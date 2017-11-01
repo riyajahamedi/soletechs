@@ -6,11 +6,26 @@
     Title="{Binding Title}"
     Icon="{Binding CurrentIcon}">
     <ContentPage.Content>
-        <StackLayout>
-            <Label
-                HorizontalOptions="CenterAndExpand"
-                Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" />
+        <StackLayout
+            Margin="16"
+            Orientation="Vertical"
+            Spacing="16">
+            <ListView x:Name="notification_list" ItemsSource="{Binding Notifications, Mode=TwoWay}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*" />
+                                    <RowDefinition Height="*" />
+                                </Grid.RowDefinitions>
+                                <Label Grid.Row="0" Text="Title" />
+                                <Label Grid.Row="1" Text="Text" />
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
