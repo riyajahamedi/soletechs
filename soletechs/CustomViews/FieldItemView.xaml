@@ -7,12 +7,12 @@
         <StackLayout Orientation="Vertical">
             <Label
                 Margin="1"
-                FontSize="12"
+                FontSize="11"
                 Text="{Binding Title}"
                 TextColor="{Binding TitleColor}" />
             <Label
                 Margin="1"
-                FontSize="15"
+                FontSize="14"
                 LineBreakMode="WordWrap"
                 Text="{Binding Text}"
                 TextColor="{Binding TextColor}" />
