@@ -54,7 +54,7 @@
                         Margin="0,5,0,0"
                         HorizontalOptions="Start"
                         Text="Soletechs"
-                        TextColor="DarkGray"
+                        TextColor="#FF333333"
                         TitleColor="LightGray" />
                 </Grid>
             </Grid>
