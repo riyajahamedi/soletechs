@@ -136,4 +136,16 @@
     <Folder Include="$(MSBuildThisFileDirectory)Views\SelfService\" />
     <Folder Include="$(MSBuildThisFileDirectory)Views\Profile\" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="$(MSBuildThisFileDirectory)Images\approval.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Images\approval_inactive.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Images\inquiries.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Images\inquiries_inactive.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Images\notification.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Images\notification_inactive.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Images\profile.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Images\profile_inactive.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Images\service.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Images\service_inactive.png" />
+  </ItemGroup>
 </Project>

@@ -148,6 +148,18 @@
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\approval.png" />
+    <BundleResource Include="Resources\approval_inactive.png" />
+    <BundleResource Include="Resources\inquiries.png" />
+    <BundleResource Include="Resources\inquiries_inactive.png" />
+    <BundleResource Include="Resources\notification.png" />
+    <BundleResource Include="Resources\notification_inactive.png" />
+    <BundleResource Include="Resources\profile.png" />
+    <BundleResource Include="Resources\profile_inactive.png" />
+    <BundleResource Include="Resources\service.png" />
+    <BundleResource Include="Resources\service_inactive.png" />
+  </ItemGroup>
   <Import Project="..\soletechs\soletechs.projitems" Label="Shared" Condition="Exists('..\soletechs\soletechs.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
