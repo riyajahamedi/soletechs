@@ -1,4 +1,5 @@
 ﻿using soletechs.Models;
+using soletechs.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,6 +18,10 @@ namespace soletechs.Views
         public HomePage()
         {
             InitializeComponent();
+            ToolbarItems.Add(new ToolbarItem("signout", "signout.png", () =>
+            {
+                SignOut();
+            }, ToolbarItemOrder.Primary));
         }
 
         protected override void OnCurrentPageChanged()
@@ -30,6 +35,14 @@ namespace soletechs.Views
                 currentPage = CurrentPage;
                 (currentPage.BindingContext as ITabIcon).IsSelected = true;
             }
+        }
+
+        private void SignOut()
+        {
+            var loginPage = new LoginPage();
+            loginPage.BindingContext = new LoginViewModel("Test");
+            Navigation.InsertPageBefore(loginPage, this);
+            Navigation.PopAsync();
         }
     }
 }
