@@ -24,7 +24,6 @@ namespace soletechs.iOS
 
                 // Border
                 this.Layer.CornerRadius = (float)elem.CornerRadius;
-                this.Layer.Bounds.Inset((float)elem.BorderWidth, (float)elem.BorderWidth);
                 Layer.BorderColor = elem.BorderColor.ToCGColor();
                 Layer.BorderWidth = (float)elem.BorderWidth;
 
