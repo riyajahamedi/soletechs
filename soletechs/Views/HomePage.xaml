@@ -9,16 +9,7 @@
             <pages:NotificationPage />
         </x:Arguments>
     </NavigationPage>
-    <NavigationPage Title="Notifications">
-        <x:Arguments>
-            <pages:NotificationPage />
-        </x:Arguments>
-    </NavigationPage>
-    <NavigationPage Title="Profile">
-        <x:Arguments>
-            <pages:ProfilePage />
-        </x:Arguments>
-    </NavigationPage>
+    <pages:ProfilePage />
     <NavigationPage Title="Services">
         <x:Arguments>
             <pages:SelfService />
