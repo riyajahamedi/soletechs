@@ -10,5 +10,10 @@ namespace soletechs.ViewModels
         {
             this.Title = "Notifications";
         }
+
+        protected override string GetCurrentIcon()
+        {
+            return IsSelected? "notification.png": "notification_inactive.png";
+        }
     }
 }

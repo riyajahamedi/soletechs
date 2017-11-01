@@ -18,5 +18,10 @@ namespace soletechs.ViewModels
             get { return image; }
             set { SetProperty(ref image, value); }
         }
+
+        protected override string GetCurrentIcon()
+        {
+            return IsSelected ? "profile.png" : "profile_inactive.png";
+        }
     }
 }

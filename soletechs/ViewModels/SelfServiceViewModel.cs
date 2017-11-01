@@ -10,5 +10,10 @@ namespace soletechs.ViewModels
         {
             this.Title = "Self Services";
         }
+
+        protected override string GetCurrentIcon()
+        {
+            return IsSelected ? "service.png" : "service_inactive.png";
+        }
     }
 }

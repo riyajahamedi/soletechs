@@ -10,5 +10,10 @@ namespace soletechs.ViewModels
         {
             this.Title = "Inquiries";
         }
+
+        protected override string GetCurrentIcon()
+        {
+            return IsSelected ? "inquiries.png" : "inquiries_inactive.png";
+        }
     }
 }
