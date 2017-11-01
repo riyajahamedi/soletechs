@@ -5,7 +5,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:soletechs.CustomViews">
     <ViewCell.View>
-        <local:BoxFrame CornerRadius="2">
+        <local:BoxFrame Margin="5" CornerRadius="2">
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="30" />
@@ -13,19 +13,14 @@
                     <RowDefinition Height="*" />
                 </Grid.RowDefinitions>
                 <StackLayout Orientation="Horizontal">
-                    <Label
-                        Margin="3"
-                        HorizontalOptions="StartAndExpand"
-                        Text="Title" />
-                    <Button
-                        Margin="3"
-                        HorizontalOptions="EndAndExpand"
-                        Image="delete.png" />
+                    <Label HorizontalOptions="StartAndExpand" Text="Title" />
+                    <Button HorizontalOptions="EndAndExpand" Image="delete.png" />
                 </StackLayout>
-                <BoxView
+                <Frame
                     Grid.Row="1"
                     HeightRequest="1"
-                    HorizontalOptions="FillAndExpand" />
+                    HorizontalOptions="FillAndExpand"
+                    OutlineColor="Gray" />
                 <Grid Grid.Row="2">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="*" />
