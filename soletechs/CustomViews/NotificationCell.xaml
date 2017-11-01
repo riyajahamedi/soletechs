@@ -5,7 +5,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:soletechs.CustomViews">
     <ViewCell.View>
-        <local:BoxFrame Margin="0,5,0,5" CornerRadius="3">
+        <local:BoxFrame Margin="3" CornerRadius="3">
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="30" />
@@ -15,7 +15,7 @@
                     <Label HorizontalOptions="StartAndExpand" Text="Title" />
                     <Button HorizontalOptions="EndAndExpand" Image="delete.png" />
                 </StackLayout>
-                <Grid Grid.Row="2">
+                <Grid Grid.Row="1">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="*" />
                         <RowDefinition Height="*" />
