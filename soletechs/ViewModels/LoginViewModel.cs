@@ -2,9 +2,10 @@
 {
     public class LoginViewModel: BaseViewModel
     {
-        public LoginViewModel():base()
+        public LoginViewModel(string companyName):base()
         {
-            this.Title = "Login";
+            Title = "Login";
+            CompanyName = companyName;
         }
 
         string userID = string.Empty;
@@ -19,6 +20,13 @@
         {
             get { return password; }
             set { SetProperty(ref password, value); }
+        }
+
+        string companyName = string.Empty;
+        public string CompanyName
+        {
+            get { return companyName; }
+            set { SetProperty(ref companyName, value); }
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using soletechs.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,16 @@ namespace soletechs.Views
 		public LoginPage ()
 		{
 			InitializeComponent ();
-		}
-	}
+        }
+
+        private void OnLoginButtonClicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void OnCompanyNameClick(object sender, EventArgs e)
+        {
+
+        }
+    }
 }

@@ -16,12 +16,15 @@ namespace soletechs.Views
 
         private void OnSaveButtonClick(object sender, EventArgs e)
         {
-
+            var loginPage = new LoginPage();
+            loginPage.BindingContext = new LoginViewModel((this.BindingContext as ServiceConfigViewModel).CompanyName);
+            Navigation.InsertPageBefore(loginPage, this);
+            Navigation.PopAsync();
         }
 
         private void OnGuestLoginClick(object sender, EventArgs e)
         {
-
+            
         }
     }
 }

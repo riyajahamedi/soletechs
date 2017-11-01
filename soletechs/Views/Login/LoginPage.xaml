@@ -1,12 +1,32 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="soletechs.Views.LoginPage">
+<ContentPage
+    x:Class="soletechs.Views.LoginPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
+    xmlns:custom="clr-namespace:soletechs.CustomViews">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout
+            Margin="16"
+            Orientation="Vertical"
+            Spacing="16">
+            <Button Clicked="OnCompanyNameClick" Text="{Binding CompanyName}" />
+            <custom:MaterialEntry
+                AccentColor="{StaticResource Accent}"
+                Placeholder="User ID"
+                Text="{Binding UserID, Mode=TwoWay}" />
+            <custom:MaterialEntry
+                AccentColor="{StaticResource Accent}"
+                Placeholder="Password"
+                Text="{Binding PassWord, Mode=TwoWay}" />
+            <custom:MaterialButton
+                x:Name="LoginButton"
+                Margin="0,20,0,0"
+                BackgroundColor="#03A9F4"
+                Clicked="OnLoginButtonClicked"
+                Elevation="1"
+                Text="Login"
+                TextColor="White" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
