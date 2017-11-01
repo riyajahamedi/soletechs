@@ -23,7 +23,7 @@
                 </StackLayout>
                 <Grid
                     Grid.Row="1"
-                    Padding="-1,2,0,3"
+                    Padding="-1,0,0,3"
                     HorizontalOptions="Start">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="*" />
@@ -50,7 +50,7 @@
                     <local:FieldItemView
                         Title="Company"
                         Grid.Column="2"
-                        Margin="15,0,0,0"
+                        Margin="20,0,0,0"
                         HorizontalOptions="Start"
                         Text="Soletechs"
                         TextColor="#FF333333"
