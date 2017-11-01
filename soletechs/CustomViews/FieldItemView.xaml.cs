@@ -17,7 +17,7 @@ namespace soletechs.CustomViews
 			InitializeComponent ();
 		}
 
-        public static BindableProperty TitleProperty = BindableProperty.Create(nameof(Title), typeof(float), typeof(FieldItemView), string.Empty);
+        public static BindableProperty TitleProperty = BindableProperty.Create(nameof(Title), typeof(string), typeof(FieldItemView), string.Empty);
 
         public string Title
         {
@@ -31,7 +31,7 @@ namespace soletechs.CustomViews
             }
         }
 
-        public static BindableProperty TextProperty = BindableProperty.Create(nameof(Text), typeof(float), typeof(FieldItemView), string.Empty);
+        public static BindableProperty TextProperty = BindableProperty.Create(nameof(Text), typeof(string), typeof(FieldItemView), string.Empty);
 
         public string Text
         {
