@@ -9,12 +9,13 @@
                 Margin="1"
                 FontSize="Small"
                 Text="{Binding Title}"
-                TextColor="Gray" />
+                TextColor="{Binding TitleColor}" />
             <Label
                 Margin="1"
                 FontSize="Medium"
                 LineBreakMode="WordWrap"
-                Text="{Binding Text}" />
+                Text="{Binding Text}"
+                TextColor="{Binding TextColor}" />
         </StackLayout>
     </ContentView.Content>
 </ContentView>

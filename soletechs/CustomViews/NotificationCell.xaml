@@ -16,6 +16,7 @@
                 </Grid.RowDefinitions>
                 <StackLayout Orientation="Horizontal">
                     <Label
+                        FontSize="Large"
                         HorizontalOptions="StartAndExpand"
                         Text="Title"
                         TextColor="DeepSkyBlue" />
