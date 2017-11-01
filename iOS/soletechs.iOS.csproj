@@ -138,6 +138,7 @@
     <Compile Include="AppDelegate.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="BorderlessEntryRenderer.cs" />
+    <Compile Include="MaterialButtonRenderer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Entitlements.plist" />
