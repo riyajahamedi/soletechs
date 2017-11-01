@@ -25,7 +25,9 @@ namespace soletechs.Views
 
         private void OnCompanyNameClick(object sender, EventArgs e)
         {
-
+            var configPage = new ServiceConfigurationPage();
+            Navigation.InsertPageBefore(configPage, this);
+            Navigation.PopAsync();
         }
     }
 }
