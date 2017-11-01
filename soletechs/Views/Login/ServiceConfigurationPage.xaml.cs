@@ -18,5 +18,10 @@ namespace soletechs.Views
         {
 
         }
+
+        private void OnGuestLoginClick(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -19,7 +19,17 @@
                 AccentColor="{StaticResource Accent}"
                 Placeholder="Company Password"
                 Text="{Binding CompanyPassword, Mode=TwoWay}" />
-            <Button Clicked="OnSaveButtonClick" Text="Save" />
+            <custom:MaterialButton
+                x:Name="SaveButton"
+                BackgroundColor="#03A9F4"
+                Clicked="OnSaveButtonClick"
+                Elevation="1"
+                HorizontalOptions="Center"
+                Text="Save"
+                TextColor="White"
+                VerticalOptions="Center"
+                WidthRequest="300" />
+            <Button Clicked="OnGuestLoginClick" Text="Guest Login" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
