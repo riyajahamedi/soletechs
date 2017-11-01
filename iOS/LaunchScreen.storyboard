@@ -1,27 +1,64 @@
-﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
-	<dependencies>
-		<deployment identifier="iOS" />
-		<plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530" />
-	</dependencies>
-	<scenes>
-		<!--View Controller-->
-		<scene sceneID="EHf-IW-A2E">
-			<objects>
-				<viewController id="01J-lp-oVM" sceneMemberID="viewController">
-					<layoutGuides>
-						<viewControllerLayoutGuide type="top" id="Llm-lL-Icb" />
-						<viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok" />
-					</layoutGuides>
-					<view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-						<rect key="frame" x="0.0" y="0.0" width="600" height="600" />
-						<autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" />
-						<color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite" />
-					</view>
-				</viewController>
-				<placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder" />
-			</objects>
-			<point key="canvasLocation" x="53" y="375" />
-		</scene>
-	</scenes>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <color key="backgroundColor" colorSpace="calibratedRGB" red="0.12549019607843137" green="0.50980392156862742" blue="0.9882352941176471" alpha="1"/>
+                            <mask key="subviews">
+                                <include reference="393"/>
+                            </mask>
+                        </variation>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="393" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="87" y="261" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <variation key="heightClass=regular-widthClass=compact" image="xamarin_logo.png"/>
+                            </imageView>
+                        </subviews>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="393"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="tab_about.png" width="32" height="30"/>
+        <image name="tab_feed.png" width="32" height="30"/>
+        <image name="xamarin_logo.png" width="220" height="51"/>
+        <image name="approval.png" width="50" height="50"/>
+        <image name="approval_inactive.png" width="50" height="50"/>
+        <image name="inquiries.png" width="50" height="50"/>
+        <image name="inquiries_inactive.png" width="50" height="50"/>
+        <image name="notification.png" width="50" height="50"/>
+        <image name="notification_inactive.png" width="50" height="50"/>
+        <image name="profile.png" width="50" height="50"/>
+        <image name="profile_inactive.png" width="50" height="50"/>
+        <image name="service.png" width="50" height="50"/>
+        <image name="service_inactive.png" width="50" height="50"/>
+        <image name="signout.png" width="50" height="50"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedScreenMetrics key="destination" type="retina55"/>
+    </simulatedMetricsContainer>
 </document>
