@@ -6,7 +6,7 @@
     xmlns:local="clr-namespace:soletechs.CustomViews">
     <ViewCell.View>
         <local:BoxFrame Margin="4" CornerRadius="3">
-            <Grid>
+            <Grid Padding="-5" BackgroundColor="Yellow">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="25" />
                     <RowDefinition Height="*" />
