@@ -16,7 +16,6 @@
                 </Grid.RowDefinitions>
                 <StackLayout Orientation="Horizontal">
                     <Label
-                        FontSize="Large"
                         HorizontalOptions="StartAndExpand"
                         Text="Title"
                         TextColor="DeepSkyBlue" />
@@ -38,16 +37,16 @@
                         Title="Created Date"
                         HorizontalOptions="Start"
                         Text="02.1.1"
-                        TextColor="DeepSkyBlue"
-                        TitleColor="LightSkyBlue" />
+                        TextColor="DarkGray"
+                        TitleColor="LightGray" />
                     <local:FieldItemView
                         Title="Type"
                         Grid.Column="1"
                         Margin="30,0,0,0"
                         HorizontalOptions="Start"
                         Text="Information"
-                        TextColor="DeepSkyBlue"
-                        TitleColor="LightSkyBlue" />
+                        TextColor="DarkGray"
+                        TitleColor="LightGray" />
                     <local:FieldItemView
                         Title="Company"
                         Grid.Row="1"
@@ -55,8 +54,8 @@
                         Margin="0,5,0,0"
                         HorizontalOptions="Start"
                         Text="Soletechs"
-                        TextColor="DeepSkyBlue"
-                        TitleColor="LightSkyBlue" />
+                        TextColor="DarkGray"
+                        TitleColor="LightGray" />
                 </Grid>
             </Grid>
         </local:BoxFrame>
