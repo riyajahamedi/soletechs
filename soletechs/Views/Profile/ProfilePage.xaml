@@ -12,26 +12,30 @@
             Margin="0,16,0,16"
             Orientation="Vertical"
             Spacing="5">
-                <controls:CircleImage Aspect="AspectFill" HorizontalOptions="Center" Source="{Binding Image}">
-                    <controls:CircleImage.WidthRequest>
-                        <OnPlatform x:TypeArguments="x:Double">
-                            <On Platform="Android, iOS">100</On>
-                        </OnPlatform>
-                    </controls:CircleImage.WidthRequest>
-                    <controls:CircleImage.HeightRequest>
-                        <OnPlatform x:TypeArguments="x:Double">
-                            <On Platform="Android, iOS">100</On>
-                        </OnPlatform>
-                    </controls:CircleImage.HeightRequest>
-                </controls:CircleImage>
-                <Label
-                    FontSize="13" HorizontalOptions="Center"
-                    Text="Name"
-                    TextColor="DeepSkyBlue" />
+            <controls:CircleImage
+                Aspect="AspectFill"
+                HorizontalOptions="Center"
+                Source="{Binding Image}">
+                <controls:CircleImage.WidthRequest>
+                    <OnPlatform x:TypeArguments="x:Double">
+                        <On Platform="Android, iOS">100</On>
+                    </OnPlatform>
+                </controls:CircleImage.WidthRequest>
+                <controls:CircleImage.HeightRequest>
+                    <OnPlatform x:TypeArguments="x:Double">
+                        <On Platform="Android, iOS">100</On>
+                    </OnPlatform>
+                </controls:CircleImage.HeightRequest>
+            </controls:CircleImage>
+            <Label
+                FontSize="13"
+                HorizontalOptions="Center"
+                Text="Name"
+                TextColor="DeepSkyBlue" />
             <Grid Margin="0,20,0,0">
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="120" />
-                    <RowDefinition Height="120" />
+                    <RowDefinition Height="100" />
+                    <RowDefinition Height="100" />
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*" />

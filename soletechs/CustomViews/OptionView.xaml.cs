@@ -15,7 +15,8 @@ namespace soletechs.CustomViews
 	{
 		public OptionView ()
 		{
-			InitializeComponent ();
+			InitializeComponent();
+            BindingContext = this;
 		}
 
         public static BindableProperty TextProperty = BindableProperty.Create(nameof(Text), typeof(string), typeof(OptionView), defaultBindingMode: BindingMode.TwoWay);
