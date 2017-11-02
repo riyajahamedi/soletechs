@@ -7,11 +7,13 @@
         <StackLayout Orientation="Vertical" Spacing="5">
             <Image
                 Aspect="AspectFit"
-                HeightRequest="50"
+                HeightRequest="75"
+                HorizontalOptions="Center"
                 Source="{Binding Image}"
-                WidthRequest="50" />
+                WidthRequest="75" />
             <Label
                 FontSize="15"
+                HorizontalOptions="Center"
                 Text="{Binding Text}"
                 TextColor="DeepSkyBlue" />
         </StackLayout>
