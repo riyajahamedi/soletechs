@@ -8,23 +8,65 @@
     Title="{Binding Title}"
     Icon="{Binding CurrentIcon}">
     <ContentPage.Content>
-        <StackLayout>
-            <controls:CircleImage
-                Aspect="AspectFill"
-                HorizontalOptions="Center"
-                Source="{Binding Image}">
-                <controls:CircleImage.WidthRequest>
-                    <OnPlatform x:TypeArguments="x:Double">
-                        <On Platform="Android, iOS">100</On>
-                    </OnPlatform>
-                </controls:CircleImage.WidthRequest>
-                <controls:CircleImage.HeightRequest>
-                    <OnPlatform x:TypeArguments="x:Double">
-                        <On Platform="Android, iOS">100</On>
-                    </OnPlatform>
-                </controls:CircleImage.HeightRequest>
-            </controls:CircleImage>
-            <custom:FieldItemView />
+        <StackLayout
+            Margin="0,16,0,16"
+            Orientation="Vertical"
+            Spacing="16">
+            <StackLayout Orientation="Vertical">
+                <controls:CircleImage
+                    Aspect="AspectFill"
+                    HorizontalOptions="Center"
+                    Source="{Binding Image}">
+                    <controls:CircleImage.WidthRequest>
+                        <OnPlatform x:TypeArguments="x:Double">
+                            <On Platform="Android, iOS">80</On>
+                        </OnPlatform>
+                    </controls:CircleImage.WidthRequest>
+                    <controls:CircleImage.HeightRequest>
+                        <OnPlatform x:TypeArguments="x:Double">
+                            <On Platform="Android, iOS">80</On>
+                        </OnPlatform>
+                    </controls:CircleImage.HeightRequest>
+                </controls:CircleImage>
+                <Label
+                    FontSize="13"
+                    Text="Name"
+                    TextColor="DeepSkyBlue" />
+            </StackLayout>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="100" />
+                    <RowDefinition Height="100" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <custom:OptionView Image="maininfo.png" Text="Main Info" />
+                <custom:OptionView
+                    Grid.Column="1"
+                    Image="jobinfo.png"
+                    Text="Job Info" />
+                <custom:OptionView
+                    Grid.Column="2"
+                    Image="benifit.png"
+                    Text="Benifits" />
+                <custom:OptionView
+                    Grid.Row="1"
+                    Image="bankinfo.png"
+                    Text="Bank Info" />
+                <custom:OptionView
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    Image="id.png"
+                    Text="Identifications" />
+                <custom:OptionView
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    Image="dependent.png"
+                    Text="Dependents" />
+            </Grid>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

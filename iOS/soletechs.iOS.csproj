@@ -168,6 +168,27 @@
   <ItemGroup>
     <BundleResource Include="Resources\launcher.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\bankinfo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\benifit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\dependent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\id.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\jobinfo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\maininfo.png" />
+  </ItemGroup>
   <Import Project="..\soletechs\soletechs.projitems" Label="Shared" Condition="Exists('..\soletechs\soletechs.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
