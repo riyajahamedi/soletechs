@@ -28,10 +28,10 @@ namespace soletechs.iOS
                 Layer.BorderWidth = (float)elem.BorderWidth;
 
                 // Shadow
-                //this.Layer.ShadowColor = elem.BorderColor.ToCGColor();
-                //this.Layer.ShadowOpacity = 0.6f;
-                //this.Layer.ShadowRadius = 2.0f;
-                //this.Layer.ShadowOffset = new SizeF(0, 0);
+                this.Layer.ShadowColor = elem.BorderColor.ToCGColor();
+                this.Layer.ShadowOpacity = 0.0f;
+                this.Layer.ShadowRadius = 2.0f;
+                this.Layer.ShadowOffset = new SizeF(0, 0);
             }
         }
     }

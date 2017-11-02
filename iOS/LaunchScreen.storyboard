@@ -14,7 +14,7 @@
                         <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -58,6 +58,13 @@
         <image name="service_inactive.png" width="50" height="50"/>
         <image name="signout.png" width="50" height="50"/>
         <image name="launcher.png" width="189" height="53"/>
+        <image name="bankinfo.png" width="80" height="80"/>
+        <image name="benifit.png" width="80" height="80"/>
+        <image name="delete.png" width="20" height="20"/>
+        <image name="dependent.png" width="80" height="80"/>
+        <image name="id.png" width="80" height="80"/>
+        <image name="jobinfo.png" width="80" height="80"/>
+        <image name="maininfo.png" width="80" height="80"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedScreenMetrics key="destination" type="retina47"/>
