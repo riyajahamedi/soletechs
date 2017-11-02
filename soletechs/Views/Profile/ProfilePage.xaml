@@ -13,10 +13,7 @@
             Orientation="Vertical"
             Spacing="16">
             <StackLayout Orientation="Vertical">
-                <controls:CircleImage
-                    Aspect="AspectFill"
-                    HorizontalOptions="Center"
-                    Source="{Binding Image}">
+                <controls:CircleImage Aspect="AspectFit" Source="{Binding Image}">
                     <controls:CircleImage.WidthRequest>
                         <OnPlatform x:TypeArguments="x:Double">
                             <On Platform="Android, iOS">80</On>
