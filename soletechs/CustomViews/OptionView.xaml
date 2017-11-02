@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentView
+    x:Class="soletechs.CustomViews.OptionView"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    <ContentView.Content>
+        <StackLayout Orientation="Vertical" Spacing="5">
+            <Image
+                Aspect="AspectFit"
+                HeightRequest="50"
+                Source="{Binding Image}"
+                WidthRequest="50" />
+            <Label
+                FontSize="15"
+                Text="{Binding Text}"
+                TextColor="DeepSkyBlue" />
+        </StackLayout>
+    </ContentView.Content>
+</ContentView>
