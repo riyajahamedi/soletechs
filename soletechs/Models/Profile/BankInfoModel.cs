@@ -4,7 +4,7 @@ using System.Text;
 
 namespace soletechs.Models.Profile
 {
-    class BankInfoModel
+    public class BankInfoModel: BaseModel
     {
     }
 }
