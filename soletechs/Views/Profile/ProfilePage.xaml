@@ -42,29 +42,61 @@
                     <ColumnDefinition Width="*" />
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
-                <custom:OptionView Image="maininfo.png" Text="Main Info" />
                 <custom:OptionView
+                    x:Name="MainInfo"
+                    Image="maininfo.png"
+                    Text="Main Info">
+                    <custom:OptionView.GestureRecognizers>
+                        <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="OnMainInfoTapped" />
+                    </custom:OptionView.GestureRecognizers>
+                </custom:OptionView>
+                <custom:OptionView
+                    x:Name="JobInfo"
                     Grid.Column="1"
                     Image="jobinfo.png"
-                    Text="Job Info" />
+                    Text="Job Info">
+                    <custom:OptionView.GestureRecognizers>
+                        <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="OnJobInfoTapped" />
+                    </custom:OptionView.GestureRecognizers>
+                </custom:OptionView>
                 <custom:OptionView
+                    x:Name="Benifit"
                     Grid.Column="2"
                     Image="benifit.png"
-                    Text="Benifits" />
+                    Text="Benifits">
+                    <custom:OptionView.GestureRecognizers>
+                        <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="OnBenifitTapped" />
+                    </custom:OptionView.GestureRecognizers>
+                </custom:OptionView>
                 <custom:OptionView
+                    x:Name="BankInfo"
                     Grid.Row="1"
                     Image="bankinfo.png"
-                    Text="Bank Info" />
+                    Text="Bank Info">
+                    <custom:OptionView.GestureRecognizers>
+                        <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="OnBankInfoTapped" />
+                    </custom:OptionView.GestureRecognizers>
+                </custom:OptionView>
                 <custom:OptionView
+                    x:Name="Identification"
                     Grid.Row="1"
                     Grid.Column="1"
                     Image="id.png"
-                    Text="Identifications" />
+                    Text="Identifications">
+                    <custom:OptionView.GestureRecognizers>
+                        <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="OnIdentificationTapped" />
+                    </custom:OptionView.GestureRecognizers>
+                </custom:OptionView>
                 <custom:OptionView
+                    x:Name="Dependent"
                     Grid.Row="1"
                     Grid.Column="2"
                     Image="dependent.png"
-                    Text="Dependents" />
+                    Text="Dependents">
+                    <custom:OptionView.GestureRecognizers>
+                        <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="OnDependentTapped" />
+                    </custom:OptionView.GestureRecognizers>
+                </custom:OptionView>
             </Grid>
         </StackLayout>
     </ContentPage.Content>

@@ -18,8 +18,15 @@
     <Compile Include="$(MSBuildThisFileDirectory)CustomViews\OptionView.xaml.cs">
       <DependentUpon>OptionView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Models\BaseModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\ITabIcon.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\Item.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Profile\BankInfoModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Profile\BenifitsModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Profile\DependentsModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Profile\IdentificationsModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Profile\JobInfoModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Profile\MainInfoModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Services\CloudDataStore.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Services\IDataStore.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Services\MockDataStore.cs" />
@@ -32,6 +39,12 @@
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\LoginViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\NotificationViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\ProfileViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\Profile\BankInfoViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\Profile\BenifitsViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\Profile\DependentsViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\Profile\IdentificationViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\Profile\JobInfoViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\Profile\MainInfoViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\SelfServiceViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Views\AboutPage.xaml.cs">
       <DependentUpon>AboutPage.xaml</DependentUpon>
@@ -62,6 +75,24 @@
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Views\Notification\NotificationPage.xaml.cs">
       <DependentUpon>NotificationPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\Profile\BankInfo.xaml.cs">
+      <DependentUpon>BankInfo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\Profile\Benifits.xaml.cs">
+      <DependentUpon>Benifits.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\Profile\Dependent.xaml.cs">
+      <DependentUpon>Dependent.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\Profile\Identification.xaml.cs">
+      <DependentUpon>Identification.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\Profile\JobInfo.xaml.cs">
+      <DependentUpon>JobInfo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\Profile\MainInfo.xaml.cs">
+      <DependentUpon>MainInfo.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Views\Profile\ProfilePage.xaml.cs">
       <DependentUpon>ProfilePage.xaml</DependentUpon>
@@ -143,7 +174,6 @@
     <Folder Include="$(MSBuildThisFileDirectory)Views\Login\" />
     <Folder Include="$(MSBuildThisFileDirectory)Views\Notification\" />
     <Folder Include="$(MSBuildThisFileDirectory)Views\SelfService\" />
-    <Folder Include="$(MSBuildThisFileDirectory)Views\Profile\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)CustomViews\NotificationCell.xaml">
@@ -152,6 +182,36 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)CustomViews\OptionView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\Profile\MainInfo.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\Profile\JobInfo.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\Profile\Benifits.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\Profile\BankInfo.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\Profile\Identification.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\Profile\Dependent.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
