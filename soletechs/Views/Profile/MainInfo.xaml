@@ -2,13 +2,63 @@
 <ContentPage
     x:Class="soletechs.Views.Profile.MainInfo"
     xmlns="http://xamarin.com/schemas/2014/forms"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:custom="clr-namespace:soletechs.CustomViews"
+    Title="{Binding Title}">
     <ContentPage.Content>
-        <StackLayout>
+        <StackLayout
+            Margin="0,16,0,16"
+            Orientation="Vertical"
+            Spacing="5">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="80" />
+                    <RowDefinition Height="80" />
+                    <RowDefinition Height="80" />
+                    <RowDefinition Height="80" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <custom:FieldItemView Title="Personal Number" Text="000645" />
+                <custom:FieldItemView
+                    Title="Old Number"
+                    Grid.Column="1"
+                    Text="100777" />
+                <custom:FieldItemView
+                    Title="Birth Date"
+                    Grid.Row="1"
+                    Grid.ColumnSpan="2"
+                    Text="24-10-1978" />
+                <custom:FieldItemView
+                    Title="Gender"
+                    Grid.Row="2"
+                    Text="Male" />
+                <custom:FieldItemView
+                    Title="Martial Status"
+                    Grid.Row="2"
+                    Grid.Column="1"
+                    Text="Married" />
+                <custom:FieldItemView
+                    Title="Joining Date"
+                    Grid.Row="3"
+                    Text="31-12-2010" />
+                <custom:FieldItemView
+                    Title="Probation End Date"
+                    Grid.Row="3"
+                    Grid.Column="1"
+                    Text="31-03-2011" />
+            </Grid>
             <Label
-                HorizontalOptions="CenterAndExpand"
-                Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" />
+                FontSize="Large"
+                HorizontalOptions="Center"
+                Text="Address" />
+            <custom:BaseListView ItemsSource="{Binding Addresses}">
+                <custom:BaseListView.ItemTemplate>
+                    <DataTemplate />
+                </custom:BaseListView.ItemTemplate>
+            </custom:BaseListView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
